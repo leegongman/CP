@@ -9,13 +9,12 @@
 clean source 준비:
 
 ```bash
-mkdir -p /home/ubuntu/builds
-cd /home/ubuntu/builds
-git clone --branch v0.14.1 https://github.com/vllm-project/vllm.git vllm_submit_v0141
-cd vllm_submit_v0141
+cd /path/to/clone/sources/vllm_submit_v0141
 ```
 
-수정 파일 덮어쓰기:
+이미 이 저장소의 `sources/vllm_submit_v0141/`에는 수정본이 반영돼 있다.
+
+만약 fresh clone 위에 다시 덮어쓰고 싶으면:
 
 ```bash
 cp /path/to/patched_sources/OmniQuant_EXAONE_v4/quantize/omniquant.py /tmp/ignore  # 참고용
